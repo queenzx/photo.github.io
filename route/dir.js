@@ -13,7 +13,7 @@ router.get('',function(req,res){
             return ;
         }
         // 成功
-        res.send(files);                             c   c
+        res.send(files);
     });
     
 });
