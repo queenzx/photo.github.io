@@ -1,0 +1,7 @@
+
+1. 安装需要的模块
+    cnpm i express --save
+    cnpm i ejs --save
+    cnpm i formidable --save
+    cnpm i silly-datetime --save
+    cnpm i rimraf --save
