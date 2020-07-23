@@ -1,6 +1,6 @@
 // 创建服务器
 const express = require('express');
-var router = require('./route');
+const router = require('./route');
 const app = express();
 
 app.listen(4000);
@@ -19,7 +19,7 @@ app.use(express.static('./uploads'));
 // 处理/请求,展示相册首页
 app.get('/',function(req,res){
     // 重定向,让浏览器重新发送一个dir的请求
-    res.redirect('/dir.js');
+    res.redirect('/dir');
 });
 
 // 处理相册相关的请求(所有以 /dir开头的请求)
