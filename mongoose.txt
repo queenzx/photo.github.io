@@ -1,0 +1,6 @@
+先复制一个分支
+git 
+切换分支
+git checkout mongooseViews
+
+cnpm i mongoose -S
