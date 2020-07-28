@@ -1,6 +1,13 @@
 先复制一个分支
-git 
+git branch mongooseViews
 切换分支
 git checkout mongooseViews
-
+安装:
 cnpm i mongoose -S
+
+推送到githubs
+git status
+git remote(photo)
+git push -u photo mongooseversion(-u表示第一次推送)
+拉取
+git pull git@github.com:queenzx/photo.github.io.git mongooseversion
