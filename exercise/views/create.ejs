@@ -70,7 +70,7 @@
                     url:"/dir/check?dirName="+val,
                     success:function(result){
                         // 修改状态小图标
-                        if(result.status == 0){
+                        if(result.status == 0){//成功
                             $('div.has-feedback').removeClass("has-error").addClass("has-success");
                             $("span.glyphicon").removeClass("glyphicon-remove").addClass("glyphicon-ok");
                             // 给dirName赋值

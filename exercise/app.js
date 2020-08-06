@@ -6,22 +6,22 @@ const app = express();
 app.listen(4000);
 
 // 设置试图模板引擎
-app.set("viwe engine","ejs");
+app.set("view engine","ejs");
 
 // 设置post请求参数的解析方式
 // application/x-www-form-urlencoded
 app.use(express.urlencoded({extended:true}));
 
 // 设置根目录
-app.use(express.static("./public"));
-app.use(express.static("./uploads"));
+app.use(express.static('./public'));
+app.use(express.static('./uploads'));
 
 // 处理/请求,展示相册首页
 app.get('/',function(req,res){
     // 重定向,让浏览器重新发送一个dir的请求
     res.redirect('/dir');
-});   
-
+})
+    
 // 处理相册相关的请求(所有以 /dir开头的请求)
 app.use('/dir',router.dir);
 
