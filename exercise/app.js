@@ -20,7 +20,7 @@ app.use(express.static('./uploads'));
 app.get('/',function(req,res){
     // 重定向,让浏览器重新发送一个dir的请求
     res.redirect('/dir');
-})
+});
     
 // 处理相册相关的请求(所有以 /dir开头的请求)
 app.use('/dir',router.dir);

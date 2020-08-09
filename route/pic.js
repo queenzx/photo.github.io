@@ -5,13 +5,13 @@ const router = express.Router();
 const { SUCCESS,FAILED } =require('../status.js');
 const fd = require('formidable');
 const fs = require('fs');
-const {Pic, Dir} = require('../model/db');
+const {Pic, Dir} = require('../model/db.js');
 const { dir } = require('console');
 
 // router.use(express.static("./uploads"));
 // 写了这句话,show.ejs页面里的图片src地址前不需要加/
 
-// 处理 /pic/show 请求,展示某个相册里面的内容
+// 处理 get方式的/pic/show 请求,展示某个相册里面的内容
 router.get('/show',function(req,res){
     // 获取请求参数得到被点击的相册名称
     var dir = req.query.dirName.trim();

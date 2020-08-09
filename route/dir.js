@@ -51,7 +51,7 @@ router.post('/mkdir',function(req,res){
     });
 });
 
-// 处理 /dir/check 请求,获取传递过来的参数并检查文件夹名称是否已经存在
+// 处理 get方式的/dir/check 请求,获取传递过来的参数并检查文件夹名称是否已经存在
 router.get('/check',function(req,res){
     // 获取参数
     var dirName = req.query.dirName;
@@ -75,7 +75,7 @@ router.get('/check',function(req,res){
     });
 });
 
-// 处理 /dir/delete 请求,删除相册
+// 处理 get方式的 /dir/delete 请求,删除相册
 router.get('/delete',function(req,res){
     // 获取参数
     var dirName = req.query.dirName.trim();
