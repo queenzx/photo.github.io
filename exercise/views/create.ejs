@@ -70,7 +70,7 @@
                     url:"/dir/check?dirName="+val,
                     success:function(result){
                         // 修改状态小图标
-                        if(result.status == 0){//成功
+                        if(result.status == 0){
                             $('div.has-feedback').removeClass("has-error").addClass("has-success");
                             $("span.glyphicon").removeClass("glyphicon-remove").addClass("glyphicon-ok");
                             // 给dirName赋值
@@ -90,9 +90,9 @@
             })
         
             // 绑定单击事件,发送创建文件夹的请求
-            $('#btn').on('click',function(){
+            $("#btn").on('click',function(){
                 if(!dirName){
-                    alert('相册名不能为空或已存在');
+                    alert("相册名不能为空或已存在");
                     return ;
                 }
                 // 发送创建文件夹请求
@@ -109,7 +109,8 @@
                     }
                 });
             });
-        })    
+        
+        })
     </script>
 </body>
 </html>
